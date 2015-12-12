@@ -28,7 +28,6 @@ public class Main {
 				int to_x = Integer.parseInt(to[0]);
 				int to_y = Integer.parseInt(to[1]);
 				
-				System.out.println("cmd: " + cmd + ", from: " + from_x + " " + from_y + ", to: " + to_x + " " + to_y);
 				for (int x=from_x; x<=to_x; x++) {
 					for (int y=from_y; y<=to_y; y++) {
 						switch(cmd) {
