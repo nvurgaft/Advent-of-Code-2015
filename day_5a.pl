@@ -8,7 +8,7 @@ my @bad_substrings = qw(ab cd pq xy);
 my $good_strings = 0;
 my $bad_strings = 0;
 
-open my $fh, '<', $ARGV[0];
+open (my $fh, '<', $ARGV[0]) or die "Error while opening file: $!\n";
 # check each word/line
 while(my $line = <$fh>) {
 	chomp $line;
